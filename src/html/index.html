@@ -8,6 +8,10 @@
   
   <title>Frontend Mentor | Bookmark landing page</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
   <header>
@@ -64,12 +68,15 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
 
   <main>
     <section class="intro-section">
+      <div class="intro__image-container"><img src="images/illustration-hero.svg" alt="A Simple Bookmark Manager" class="intro__image-container-img"></div>
       <div class="section-heading">
         <h1 class="section-heading__header-h1">A Simple Bookmark Manager</h1>
         <p class="section-heading__text">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
       </div>
-      <a href="#" class="button-primary">Get it on Chrome</a>
-      <a href="#" class="button-secondary">Get it on Firefox</a>
+      <div class="intro__button-container">
+        <a href="#" class="button-primary">Get it on Chrome</a>
+        <a href="#" class="button-secondary">Get it on Firefox</a>
+      </div>
     </section>
     <section class="feature-section">
       <div class="section-heading">
@@ -82,7 +89,7 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
         <button><span class="tabButton__text">Easy Sharing<span class="tabButton__text-indicator"></span></span></button>
       </div>
       <div class="tab">
-        <div class="tab__image-container"><img src="" alt="Bookmark in one click" class="tab__image-container-img"></div>
+        <div class="tab__image-container"><img src="images/illustration-features-tab-1.svg" alt="Bookmark in one click" class="tab__image-container-img"></div>
         <div class="tab__heading">
           <h3 class="tab__heading-header-h3">Bookmark in one click</h3>
           <p class="tab__heading-text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
@@ -92,7 +99,7 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
         </div>
       </div>
     <div class="tab">
-      <div class="tab__image-container"><img src="" alt="Intelligent search" class="tab__image-container-img"></div>
+      <div class="tab__image-container"><img src="images/illustration-features-tab-2.svg" alt="Intelligent search" class="tab__image-container-img"></div>
       <div class="tab__heading">
         <h3 class="tab__heading-header-h3">Intelligent search</h3>
         <p class="tab__heading-text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
@@ -103,7 +110,7 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
     </div>
     
     <div class="tab">
-      <div class="tab__image-container"><img src="" alt="Share your bookmarks" class="tab__image-container-img"></div>
+      <div class="tab__image-container"><img src="images/illustration-features-tab-3.svg" alt="Share your bookmarks" class="tab__image-container-img"></div>
       <div class="tab__heading">
         <h3 class="tab__heading-header-h3">Share your bookmarks</h3>
         <p class="tab__heading-text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
