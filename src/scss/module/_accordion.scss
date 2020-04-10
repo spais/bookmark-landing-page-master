@@ -1,0 +1,32 @@
+/*-------------------------------------------------------------------------------
+    Accordion
+-------------------------------------------------------------------------------*/
+
+.accordion {
+    margin-top: 4.4rem;
+    
+    &__question {
+        position: relative;
+        padding: 2rem 0;
+        border-bottom: 1px solid #e1e1e1;
+        cursor: pointer;
+        &-title{
+            color: $color-dark-blue;
+        }
+    }
+    &__chevron {
+        display: block;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 24px;
+        right: 0;
+        background-image: url(/images/icon-arrow.svg);
+        background-repeat: no-repeat;
+    }
+    &__answer {
+        display: none;
+        padding: 2rem 0;
+        border-bottom: 1px solid #e1e1e1;
+    }
+}

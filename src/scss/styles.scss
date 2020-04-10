@@ -1,6 +1,1 @@
-body {
-    background-color: red;
-}
-p {
-    font-size: 1em;
-}
+@import 'settings', 'base/base','layout/layout','module/module-dir'

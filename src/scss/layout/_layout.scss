@@ -1,0 +1,26 @@
+/*-------------------------------------------------------------------------------
+    Layout
+-------------------------------------------------------------------------------*/
+
+.header-brand {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 3.2rem 3.2rem 0;
+}
+
+.intro-section, .feature-section, .download-section, .faq-section {
+    width: 100vw;
+    padding: 6.4rem 3.2rem;
+}
+
+.contact-section {
+    margin-top: 3.6rem;
+    padding: 3.2rem 3.2rem 6.4rem;
+    background-color: $color-soft-blue;
+}
+
+.footer-section {
+    padding: 3.6rem;
+    background-color: $color-dark-blue;
+}

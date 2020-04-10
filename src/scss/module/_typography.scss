@@ -1,0 +1,53 @@
+/*-------------------------------------------------------------------------------
+    Typography
+-------------------------------------------------------------------------------*/
+
+/* -- Section Heading --*/
+
+.section-heading {
+    text-align: center;
+    &__header-h1 {
+        font-size: 2.8rem;
+        line-height: 1.5em;
+        color: $color-dark-blue;
+    }
+    &__header-h2 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $color-dark-blue;
+    }
+    &__text {
+        margin-top: 1.8rem;
+    }
+}
+
+/* -- Contact Section Heading --*/
+
+.contact-section-heading {
+    text-align: center;
+    &__header-h2 {
+        margin-bottom: 3.2rem;
+        line-height: 3.2rem;
+        font-size: 2.4rem;
+        color: #fff;
+    }
+    &__text {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.4ch;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+/* -- Attribution -- */
+
+.attribution {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    &__link {
+        color: #fff;
+        text-decoration: underline;
+    }
+}

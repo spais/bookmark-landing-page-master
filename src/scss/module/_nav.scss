@@ -1,0 +1,42 @@
+/*-------------------------------------------------------------------------------
+    Navigation
+-------------------------------------------------------------------------------*/
+
+/* -- Navbar Toggle --*/
+.navbar-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    .navbar-toggle__bar {
+        width: inherit;
+        height: 4px;
+        background-color: $color-dark-blue;
+    }
+}
+
+/* -- Navbar --*/
+.navbar {
+    display: none;
+}
+
+/*-- FooterNavbar --*/
+
+.footerNavlinks {
+    margin: 0 0 3.2rem;
+    padding: 0;
+    &__items {
+        text-align: center;
+        list-style-type: none;
+    }
+    &__link {
+        display: block;
+        padding: 0.8rem 0;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2ch;
+        color: #fff;
+    }
+}

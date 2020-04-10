@@ -1,0 +1,62 @@
+/*-------------------------------------------------------------------------------
+    Tabs
+-------------------------------------------------------------------------------*/
+
+/*-- Tab Typography --*/
+
+.tab-heading {
+    text-align: center;
+    &__header-h3 {
+        margin-top: 8.4rem;
+        font-size: 2.4rem;
+        color: $color-dark-blue;
+    }
+    &__text {
+        margin-top: 1.8rem;
+    }
+}
+
+
+/* -- Tab Buttons --*/
+
+.tabButton {
+    margin-top: 3.2rem;
+    margin-bottom: 6.4rem;
+    text-align: center;
+    &__button {
+        width: 100%;
+        padding: 1em 0;
+        outline: none;
+        border: none;
+        background: none;
+        position: relative;
+        border-top: 1px solid #e1e1e1;
+        font-size: 1.6rem;
+        font-weight: $font-weight-bold;
+        color: $color-gray-blue;
+        cursor: pointer;
+        z-index: 1;
+        &:last-child {
+            border-bottom: 1px solid #e1e1e1;
+        }  
+        &-indicator {
+            display: none;
+            background-color: $color-soft-red;
+            width: calc(100% - 50%);
+            height: 4px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+    }
+}
+
+.button-active {
+    color: $color-dark-blue;
+}
+
+.button-indicator-active {
+    display: block;
+}
