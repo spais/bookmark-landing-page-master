@@ -4,10 +4,21 @@
 
 .contact-form {
     width: 100%;
+    @media (min-width: $width-desktop) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 16px;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__field {
         position: relative;
         &:nth-child(1) {
             margin-bottom: 1.4rem;
+        }
+        @media (min-width: $width-desktop) {
+           
         }
     }
     &__input {
@@ -51,13 +62,22 @@
     &__submit {
         display: block;
         width: 100%;
-        padding: 1em;
+        padding: 1em 1.1em; 
         border: none;
         background-color: $color-soft-red;
+        border: 2px solid $color-soft-red;
         border-radius: 6px;
         font-size: 1.4rem;
         line-height: 1.5em;
         font-weight: $font-weight-bold;
         color: #fff;
+        transition: all 200ms;
+        cursor: pointer;
+        &:hover {
+            color: $color-soft-red;
+            border: 2px solid $color-soft-red;
+            background-color: #fff;
+            box-shadow: none;
+        }
     }
 }

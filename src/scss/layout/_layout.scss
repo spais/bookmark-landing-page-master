@@ -2,25 +2,76 @@
     Layout
 -------------------------------------------------------------------------------*/
 
+/*-- Main Header --*/
+
+.header-section {
+    width: 100%;
+    padding: 3.2rem 3.2rem 0;
+    @media (min-width: $width-desktop) {
+        display: flex;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .header-brand {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    padding: 3.2rem 3.2rem 0;
+    width: 100%;
+    @media (min-width: $width-desktop) {
+        width: 50%;
+    }
 }
 
-.intro-section, .feature-section, .download-section, .faq-section {
+/*-- Sections --*/
+
+.section-intro, .section-feature, .section-download, .section-faq {
     width: 100vw;
     padding: 6.4rem 3.2rem;
+    @media (min-width: $width-desktop) {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-.contact-section {
+@media (min-width: $width-desktop) {
+    .section-intro {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    .section-feature {
+        padding-top: 3.2rem;
+        padding-bottom: 9.6rem;
+    }
+    .section-faq {
+        padding-bottom: 9.6rem;
+    }
+}
+
+/*-- Contact Section --*/
+
+.section-contact {
     margin-top: 3.6rem;
     padding: 3.2rem 3.2rem 6.4rem;
     background-color: $color-soft-blue;
 }
 
-.footer-section {
+/*-- Footer Section --*/
+
+.section-footer {
     padding: 3.6rem;
     background-color: $color-dark-blue;
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: $width-desktop) {
+            flex-direction: row;
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

@@ -33,52 +33,103 @@
 .offset__image-container {
     display: block;
     margin-bottom: 4.8rem;
+    @media (min-width: $width-desktop) {
+      width: 50%;
+      margin-bottom: 0;
+    }
     &-right {
+      display: block;
+      position: relative;
+      width: 100%;
+      @media (min-width: $width-desktop) {
+        width: calc(100% + 6%);
+      }
+      @media (min-width: $width-desktop-large) {
+        width: calc(100% + 13%);
+      }
+      &::after {
+        content: '';
         display: block;
-        position: relative;
-        width: 100%;
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: calc(45vw + 16px);
-            width: calc(86% + 36px);
-            right: -3.2rem;
-            bottom: 0;
-            z-index: -1;
-            background-color: $color-soft-blue;
-            border-top-left-radius: 9999px;
-            border-bottom-left-radius: 9999px;
+        position: absolute;
+        height: calc(45vw + 16px);
+        width: calc(86% + 36px);
+        right: -3.2rem;
+        bottom: 0;
+        z-index: -1;
+        background-color: $color-soft-blue;
+        border-top-left-radius: 9999px;
+        border-bottom-left-radius: 9999px;
+        transition: all 600ms;
+        @media (min-width: $width-desktop) {
+          height: 70%;
+          width: calc(50vw - 144px);
+          margin-left: 144px;
+          left: 0;
+          right: 0;
         }
-        &-image {
-            display: block;
-            height: 100%;
-            margin-left: -18px;
-            width: calc(100% + 36px);
-        }    
+        @media (min-width: $width-ultra-large) {
+          height: 70%;
+          width: calc(46vw - 144px);
+          max-width: 700px;
+          margin-left: 144px;
+          border-top-right-radius: 9999px;
+          border-bottom-right-radius: 9999px;
+        }
+      }
+      &-image {
+        display: block;
+        height: 100%;
+        margin-left: -18px;
+        width: calc(100% + 36px);
+        @media (min-width: $width-desktop) {
+          margin: 0;
+          width: 100%;
+        }
+      }    
     }
     &-left {
+      display: block;
+      position: relative;
+      width: 100%;
+      &::after {
+        content: '';
         display: block;
-        position: relative;
-        width: 100%;
-        &::after {
-            content: '';
-            display: block;
-            position: absolute;
-            height: calc(45vw + 32px);
-            width: calc(86% + 36px);
-            left: -3.2rem;
-            bottom: -36px;
-            z-index: -1;
-            background-color: $color-soft-blue;
-            border-top-right-radius: 9999px;
-            border-bottom-right-radius: 9999px;
+        position: absolute;
+        height: calc(45vw + 32px);
+        width: calc(86% + 36px);
+        left: -3.2rem;
+        bottom: -36px;
+        z-index: -1;
+        background-color: $color-soft-blue;
+        border-top-right-radius: 9999px;
+        border-bottom-right-radius: 9999px;
+        @media (min-width: $width-desktop) {
+          height: 96%;
+          width: calc(50% + (225px * 2));
+          left: -225px;
+          right: 0;
+          bottom: -66px;
         }
-        &-image {
-            display: block;
-            height: 100%;
-            width: 100%;
-        }    
+        @media (min-width: $width-ultra-large) {
+          height: 96%;
+          width: calc(50% + (225px * 2));
+          left: -225px;
+          right: 0;
+          bottom: -66px;
+          border-top-left-radius: 9999px;
+          border-bottom-left-radius: 9999px;
+        }
+      }
+      &-image {
+        display: block;
+        height: 100%;
+        margin-left: -18px;
+        width: calc(100% + 36px);
+        @media (min-width: $width-desktop) {
+          margin: 0;
+          width: 100%;
+        }
+      }  
     }
 }
 
@@ -86,9 +137,21 @@
 
 .footer-brand {
   padding-bottom: 2.4rem;
+  @media (min-width: $width-desktop) {
+    padding-bottom: 0;
+  }
   &__logo {
     display: block;
     width: 160px;
     margin: 0 auto;
+  }
+}
+
+/*-- Social Icons --*/
+.social-icon-svg {
+  fill: #fff;
+  transition: all 200ms;
+  &:hover {
+    fill: $color-soft-red;
   }
 }

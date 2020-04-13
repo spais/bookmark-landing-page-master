@@ -1,0 +1,97 @@
+/*-------------------------------------------------------------------------------
+    Typography
+-------------------------------------------------------------------------------*/
+
+/* -- Section Heading --*/
+
+.section-intro-heading {
+    text-align: center;
+    @media (min-width: $width-desktop) {
+        width: 50%;
+        padding-right: 6.4rem;
+        text-align: left;
+    }
+    &__header-h1 {
+        font-size: 2.8rem;
+        line-height: 1.5em;
+        color: $color-dark-blue;
+        @media (min-width: $width-desktop) {
+            font-size: 3.6rem;
+            line-height: 1.2em;
+        }
+    }
+    &__header-h2 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $color-dark-blue;
+    }
+    &__text {
+        margin-top: 1.8rem;
+    }
+}
+
+.section-heading {
+    text-align: center;
+    @media (min-width: $width-desktop) {
+        width: 510px;
+        margin: 0 auto;
+    }
+    &__header-h2 {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        color: $color-dark-blue;
+    }
+    &__text {
+        margin-top: 1.8rem;
+    }
+}
+
+/* -- Contact Section Heading --*/
+
+.contact-section-heading {
+    text-align: center;
+    @media (min-width: $width-desktop) {
+        width: 380px;
+        margin: 0 auto;
+    }
+    &__header-h2 {
+        margin-bottom: 3.2rem;
+        line-height: 3.2rem;
+        font-size: 2.4rem;
+        color: #fff;
+    }
+    &__text {
+        margin: 3.2rem 0 1.2rem;
+        font-size: 1.2rem;
+        letter-spacing: 0.4ch;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+/* -- Attribution -- */
+
+.attribution {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    color: $color-gray-blue;
+    @media (min-width: $width-desktop) {
+        width: 100%;
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 1.3rem;
+        text-align: left;
+    }
+    &__link {
+        color: #d1d1d1;
+        text-decoration: underline;
+        &:hover {
+            color: $color-soft-red;
+        }
+    }
+}

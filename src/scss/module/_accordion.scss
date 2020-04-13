@@ -4,7 +4,11 @@
 
 .accordion {
     margin-top: 4.4rem;
-    
+    @media (min-width: $width-desktop) {
+       width: 580px;
+       margin-left: auto;
+       margin-right: auto;
+    }  
     &__question {
         position: relative;
         padding: 2rem 0;
@@ -12,6 +16,9 @@
         cursor: pointer;
         &-title{
             color: $color-dark-blue;
+            &:hover {
+                color: $color-soft-red;
+            }
         }
     }
     &__chevron {

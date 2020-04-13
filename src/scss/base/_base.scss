@@ -57,6 +57,10 @@ p {
     padding: 0;
     font-weight: $font-weight-bold;
     color: $color-gray-blue;
+    @media (min-width: $width-desktop) {
+        font-size: 1.6rem;
+        font-weight: $font-weight-normal;
+    }
 }
 
 a {
