@@ -7,24 +7,41 @@
 .header-section {
     width: 100%;
     padding: 3.2rem 3.2rem 0;
+    transition: all 300ms;
     @media (min-width: $width-desktop) {
         display: flex;
         max-width: 1170px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-bottom: 3.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        position: fixed;
+        z-index: 9999;
+        transition: all 300ms;
+        &--active {
+            padding-top: 1.6rem;
+            padding-bottom: 1.6rem;
+            background-color: rgba(255,255,255,0.95);
+        }
     }
 }
+
+.header-section--overlay {
+    height: 100vh;
+    background: hsla(229, 31%, 21%, 0.9);
+  }
 
 .header-brand {
     display: flex;
     justify-content: space-between;
     width: 100%;
     @media (min-width: $width-desktop) {
+        align-items: center;
         width: 50%;
     }
 }
 
 /*-- Sections --*/
+
 
 .section-intro, .section-feature, .section-download, .section-faq {
     width: 100vw;
@@ -41,6 +58,7 @@
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
+        padding-top: 3.2rem;
     }
     .section-feature {
         padding-top: 3.2rem;
@@ -48,6 +66,9 @@
     }
     .section-faq {
         padding-bottom: 9.6rem;
+    }
+    main {
+        padding-top: 12rem;
     }
 }
 

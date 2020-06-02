@@ -80,7 +80,7 @@ const
         .pipe(postcss([
             assets({ loadPaths: ['images/'] }),
             autoprefixer({ BrowsersList: ['last 2 versions', '> 2%'] }),
-            mqpacker
+            //mqpacker
             //cssnano
         ]))
         .pipe(sourcemaps ? sourcemaps.write() : noop())

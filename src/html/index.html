@@ -17,7 +17,7 @@
   <header class="header-section">
     <div class="header-brand">
       <a href="#" class="header-brand__logo"><svg class="logo" version="1.1" xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px"
+        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" width="147.7px" height="25px" viewBox="0 0 147.7 25" style="enable-background:new 0 0 147.7 25;"
         xml:space="preserve">
         <g>
@@ -58,11 +58,15 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
     </div>
     <nav class="navbar">
       <ul class="navlinks">
-        <li class="navlinks__items"><a href="#" class="navlinks__link">Features</a></li>
-        <li class="navlinks__items"><a href="#" class="navlinks__link">Pricing</a></li>
-        <li class="navlinks__items"><a href="#" class="navlinks__link">Contact</a></li>
+        <li class="navlinks__items"><a href="#features" data-id="features" class="navlinks__link">Features</a></li>
+        <li class="navlinks__items"><a href="#pricing" data-id="pricing" class="navlinks__link">Pricing</a></li>
+        <li class="navlinks__items"><a href="#contact" data-id="contact" class="navlinks__link">Contact</a></li>
         <li class="navlinks__items"><a href="#" class="navlinks__link navlinks__link-login">Login</a></li>
       </ul>
+      <div class="navlinkSocial">
+        <a href="#" class="navlinkSocial__link"><img src="images/icon-facebook.svg" alt="Facebook"></a>
+        <a href="#" class="navlinkSocial__link"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+      </div>
     </nav>
   </header>
   <main>
@@ -81,17 +85,17 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
         </div>
       </div>
     </section>
-    <section class="section-feature">
+    <section id="features" class="section-feature">
       <div class="section-heading">
         <h2 class="section-heading__header-h2">Features</h2>
         <p class="section-heading__text">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
       </div>
       <div class="tabButton">
-        <button class="tabButton__button button-active">Simple Bookmarking<span class="tabButton__button-indicator button-indicator-active"></span></button>
-        <button class="tabButton__button">Speedy Searching<span class="tabButton__button-indicator"></span></button>
-        <button class="tabButton__button">Easy Sharing<span class="tabButton__button-indicator"></span></button>
+        <button id="0" class="tabButton__button button-active">Simple Bookmarking</button>
+        <button id="1" class="tabButton__button">Speedy Searching</button>
+        <button id="2" class="tabButton__button">Easy Sharing</button>
       </div>
-      <div class="tab">
+      <div id="tab-0" class="tab tab--active">
         <div class="offset__image-container">
           <div class="offset__image-container-left">
             <img src="images/illustration-features-tab-1.svg" alt="Bookmark in one click" class="offset__image-container-left-image">
@@ -105,8 +109,7 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
           </div>
         </div>
       </div>
-      <!--
-      <div class="tab">
+      <div id="tab-1" class="tab">
         <div class="offset__image-container">
           <div class="offset__image-container-left">
             <img src="images/illustration-features-tab-2.svg" alt="Intelligent search" class="offset__image-container-left-image">
@@ -120,7 +123,7 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
           </div>
         </div>
       </div>
-      <div class="tab">
+      <div id="tab-2" class="tab">
         <div class="offset__image-container">
           <div class="offset__image-container-left">
             <img src="images/illustration-features-tab-3.svg" alt="Share your bookmarks" class="offset__image-container-left-image">
@@ -134,9 +137,8 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
           </div>
         </div>
       </div>
-      -->
     </section>
-    <section class="section-download">
+    <section id="pricing" class="section-download">
       <div class="section-heading">
         <h2 class="section-heading__header-h2">Download the extension</h2>
         <p class="section-heading__text">We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
@@ -180,51 +182,31 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
         <p class="section-heading__text">Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
       </div>
       <div class="accordion">
-        <!-- Question 1 -->
         <div class="accordion__question">
           <p class="accordion__question-title">What is Bookmark?</p>
-          <i class="accordion__chevron"></i>
-        </div>
-        <!-- Answer 1 -->
-        <div class="accordion__answer">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
-        </div>
-        
+          <p class="accordion__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+        </div>     
         <!-- Question 2 -->
         <div class="accordion__question">
           <p class="accordion__question-title">How can I request a new browser?</p>
-          <i class="accordion__chevron"></i>
+          <p  class="accordion__answer">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
         </div>
-        <!-- Answer 2 -->
-        <div class="accordion__answer">
-          <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
-        </div>
-
         <!-- Question 3 -->
         <div class="accordion__question">
           <p class="accordion__question-title">Is there a mobile app?</p>
-          <i class="accordion__chevron"></i>
+          <p class="accordion__answer">Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
         </div>
-        <!-- Answer 3 -->
-        <div class="accordion__answer">
-          <p>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum.</p>
-        </div>
-
         <!-- Question 4 -->
         <div class="accordion__question">
           <p class="accordion__question-title">What about other Chromium browsers?</p>
-        <i class="accordion__chevron"></i>
-        </div>
-        <!-- Answer 4 -->
-        <div class="accordion__answer">
-          <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
+          <p class="accordion__answer">Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit.</p>
         </div>
       </div>
       <div class="accordion__button-container">
         <a href="#" class="button-primary">More Info</a>
       </div>
     </section>
-    <section class="section-contact">
+    <section id="contact" class="section-contact">
       <div class="contact-section-heading">
         <p class="contact-section-heading__text">35,000&plus; already joined</p>
         <h2 class="contact-section-heading__header-h2">Stay up-to-date with what we’re doing</h2>
@@ -246,13 +228,13 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
       <div class="footer-brand"><a href="#"><img src="images/logo-bookmark-reverse.svg" alt="bookmark" class="footer-brand__logo"></a></div>
       <nav class="footerNavbar">
         <ul class="footerNavlinks">
-          <li class="footerNavlinks__items"><a href="#" class="footerNavlinks__link">Features</a></li>
-          <li class="footerNavlinks__items"><a href="#" class="footerNavlinks__link">Pricing</a></li>
-          <li class="footerNavlinks__items"><a href="#" class="footerNavlinks__link">Contact</a></li>
+          <li class="footerNavlinks__items"><a href="#features" class="footerNavlinks__link">Features</a></li>
+          <li class="footerNavlinks__items"><a href="#pricing" class="footerNavlinks__link">Pricing</a></li>
+          <li class="footerNavlinks__items"><a href="#contact" class="footerNavlinks__link">Contact</a></li>
         </ul>
       </nav>
       <div class="social-icons-container">
-        <div class="social-icons"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" class="social-icon-svg" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></div>
+        <div class="social-icons"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" class="social-icon-svg" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg></a></div>
         <div class="social-icons"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#FFF" class="social-icon-svg" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/></svg></a></div>
       </div>
 
@@ -262,5 +244,6 @@ l-1.5,1.8v3.9h-2.5L136.6,6L136.6,6z" />
       Coded by <a href="https://github.com/spais" class="attribution__link">Shawn Pais</a>.
     </p>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

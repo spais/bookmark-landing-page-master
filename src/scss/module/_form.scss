@@ -30,11 +30,11 @@
         border: 2px solid #fff;
         border-radius: 6px;
         font-size: 1.4rem;
-    }
-    &__warning-input {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-color: $color-soft-red;
+        &--warning-input {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-color: $color-soft-red;
+        }
     }
     &__warning-text {
         display: none;
@@ -46,18 +46,24 @@
         background-color: $color-soft-red;
         border-bottom-left-radius: 6px;
         border-bottom-right-radius: 6px;
+        &--active {
+            display: block;
+        }
     }
     &__warning-icon {
         display: none;
         width: 100%;
         height: 100%;
-        background-image: url(/images/icon-error.svg);
         background-repeat: no-repeat;
         background-position: calc(100% - 16px) calc(100% - 16px);
         position: absolute;
-        top: 0;
+        top: -24px;
         right: 0;
         z-index: 9999;
+        &--error {
+            display: block;
+            background-image: url(/images/icon-error.svg);
+        }
     }
     &__submit {
         display: block;

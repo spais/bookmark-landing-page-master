@@ -4,9 +4,16 @@
 
 /*-- Tab --*/
 
-@media (min-width: $width-desktop) {
-    .tab {
-        display: flex;
+.tab {
+    display: none;
+    &--active {
+        display: block;
+    }
+    @media (min-width: $width-desktop) {
+        display: none;
+        &--active {
+            display: flex;
+        }
     }
 }
 
@@ -66,6 +73,7 @@
             border-top: none;
             border-bottom: 1px solid #e1e1e1;
         }
+        /*--
         &-indicator {
             display: none;
             background-color: $color-soft-red;
@@ -80,11 +88,26 @@
                 width: 100%;
             }
         }
+        --*/
     }
 }
 
 .button-active {
     color: $color-dark-blue;
+    &:after {
+        content: "";
+        background-color: $color-soft-red;
+        width: calc(100% - 50%);
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        @media (min-width: $width-desktop) {
+            width: 100%;
+        }
+    }
 }
 
 .button-indicator-active {

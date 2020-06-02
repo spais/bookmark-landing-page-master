@@ -13,67 +13,130 @@
     @media (min-width: $width-desktop) {
         display: none;
     }
-    .navbar-toggle__bar {
-        width: inherit;
-        height: 4px;
-        background-color: $color-dark-blue;
-    }
+}
+
+.navbar-toggle__bar {
+    width: inherit;
+    height: 4px;
+    background-color: $color-dark-blue;
+    transition: all 200ms;
+}
+
+.navbar-toggle__bar--close {
+    background-color: #fff;
+}
+
+.navbar-toggle__bar--close:nth-of-type(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+.navbar-toggle__bar--close:nth-of-type(2) {
+    opacity: 0;
+}
+
+.navbar-toggle__bar--close:nth-of-type(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* -- Navbar --*/
 .navbar {
     display: none;
+    &--active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 96px);
+    }
     @media (min-width: $width-desktop) {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
         width: 50%;
-        float: right;
+        padding: 0;
     }
 }
 
 .navlinks {
-    $component-navlinks: &;
-    display: flex;
-    justify-content: space-between;
-    width: 84%;
-    margin: 0 0 0 16%;
+    margin: 48px 0 0;
     padding: 0;
+    text-align: center;
+    @media (min-width: $width-desktop) {
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+    }
     &__items {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
         list-style-type: none;
-        #{$component-navlinks}__link {
-            padding: 8px 4px;
+        @media (min-width: $width-desktop) {
+            border: none;
+            &:nth-of-type(3) {
+                padding-right: 16px;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        padding: 24px 0;
+        font-size: 1.8rem;
+        font-weight: $font-weight-normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        letter-spacing: 0.2ch;
+        @media (min-width: $width-desktop) {
+            display: block;
+            padding: 16px 24px;
             font-size: 1.4rem;
             font-weight: $font-weight-normal;
             text-transform: uppercase;
             text-decoration: none;
             color: $color-dark-blue;
-            letter-spacing: 1px;
+            letter-spacing: 0.2ch;
+            transition: all 300ms;
             &:hover {
                 color: $color-soft-red;
             }
-            &-login {
-                display: inline;
-                padding: 12px 36px;
-                font-size: 1.4rem;
-                font-weight: $font-weight-bold;
-                text-transform: uppercase;
-                text-decoration: none;
-                color: #fff;
-                letter-spacing: 1px;
-                background-color: $color-soft-red;
-                border: 2px solid transparent;
-                border-radius: 5px;
-                transition: all 200ms;
-                @include dropshadow;
-                &:hover {
-                    color: $color-soft-red;
-                    border: 2px solid $color-soft-red;
-                    background-color: #fff;
-                    box-shadow: none;
-                }
+        }
+    }
+    &__link-login {
+        margin-top: 36px;
+        padding: 12px 0;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        @media (min-width: $width-desktop) {
+            background-color: $color-soft-red;
+            margin: 0;
+            padding: 8px 30px;
+            font-weight: $font-weight-bold;
+            color: #fff;
+            border: 2px solid transparent;
+            -webkit-box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.6);
+            -moz-box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.6);
+            box-shadow: 0px 6px 18px -9px rgba(0,0,0,0.6);
+            transition: all 300ms;
+            &:hover {
+                color: $color-soft-red;
+                border: 2px solid $color-soft-red;
+                background-color: #fff;
+                box-shadow: none;
             }
         }
     }
 }
+
+.navlinkSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 48px;
+    @media (min-width: $width-desktop) {
+        display: none;
+    }
+    &__link {
+        display: block;
+        padding: 24px;
+    }
+}
+
 
 /*-- FooterNavbar --*/
 
