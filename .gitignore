@@ -1,7 +1,4 @@
 .DS_Store
-design/
-src/images/
-build/images/
 node_modules/
-README.md
-style-guide.md
+package-lock.json
+package.json
