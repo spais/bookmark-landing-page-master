@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.29.3",
     "css-mqpacker": "^7.0.0",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
@@ -21,7 +21,7 @@
     "gulp-newer": "^1.4.0",
     "gulp-noop": "^1.0.0",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^6.0.1",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-strip-debug": "^3.0.0",
     "gulp-terser": "^1.2.0",
